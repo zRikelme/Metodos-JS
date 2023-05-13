@@ -93,3 +93,65 @@
 // })
 
 // document.body.innerHTML = JSON.stringify(todosSaoNumeros)  
+
+//METODO SOME. verificar pelo menos um itm
+// const array = [1,2,3,4,5,'text'];
+
+// const umItemNaoEnumero = array.some((item) => {
+//   return item !== "number"
+// })
+
+// console.log(umItemNaoEnumero)
+
+//OUTRO ASSUNTO
+
+//Promisses
+//.then, .catch.
+
+// function somarNumero(a, b) {
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(a + b)
+//     }, 2000)
+//   }) 
+//   }
+
+// somarNumero(10, 30)
+// .then((soma) => {
+//   document.body.innerHTML = soma
+// })
+// .catch((err) => {
+//   console.log(err)
+// })
+
+
+// fetch('https//api.github.com/users/zRikelme')
+// .then(response => {
+//   return response.json();
+// })
+// .then(body => {
+//   console.log(body)
+// })
+// .catch((err) => {
+//   console.log(err)
+// })
+// .finally(() => { //<= mensagem depos que termina a promisse.
+//   console.log('deu')
+// })
+
+// async function buscarDadosGithub() {
+//   try {
+//     const response = await fetch('https://api.github.com/users/zRikelme');
+//     const body = await response.json();
+  
+//     return body.name
+//   } catch(erro) {
+//     console.log(erro)
+//   }
+//   finally {
+//     console.log('terminou')
+//   }
+// }
+// buscarDadosGithub().then(name => {
+//   console.log(name)
+// });
